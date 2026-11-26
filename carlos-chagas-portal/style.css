@@ -1,9 +1,10 @@
 :root {
     --primary: #1b4332;
     --primary-light: #2d6a4f;
+    --accent: #d4a373;
     --gold: #e9c46a;
-    --dark: #101814;
-    --light: #f4f7f5;
+    --dark: #121a16;
+    --light: #f8f9fa;
     --text: #2b2d42;
     --white: #ffffff;
 }
@@ -31,7 +32,7 @@ h1, h2, h3, .logo {
 
 .container {
     width: 90%;
-    max-width: 1140px;
+    max-width: 1150px;
     margin: 0 auto;
 }
 
@@ -43,7 +44,7 @@ h1, h2, h3, .logo {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .nav-content {
@@ -55,7 +56,7 @@ h1, h2, h3, .logo {
 .logo {
     color: var(--white);
     text-decoration: none;
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     font-weight: 800;
 }
 
@@ -90,9 +91,10 @@ h1, h2, h3, .logo {
     cursor: pointer;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
-    min-height: 78vh;
+    position: relative;
+    min-height: 80vh;
     background: linear-gradient(135deg, #1b4332 0%, #081c15 100%);
     display: flex;
     align-items: center;
@@ -102,11 +104,13 @@ h1, h2, h3, .logo {
 }
 
 .hero-content {
-    max-width: 820px;
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
 }
 
 .badge {
-    background: rgba(233, 196, 106, 0.15);
+    background: rgba(233, 196, 106, 0.2);
     border: 1px solid var(--gold);
     color: var(--gold);
     padding: 0.4rem 1rem;
@@ -114,11 +118,11 @@ h1, h2, h3, .logo {
     font-size: 0.85rem;
     font-weight: 600;
     display: inline-block;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .hero h1 {
-    font-size: 2.9rem;
+    font-size: 3rem;
     font-weight: 800;
     margin-bottom: 1rem;
     line-height: 1.2;
@@ -147,14 +151,13 @@ h1, h2, h3, .logo {
     text-decoration: none;
     font-weight: 700;
     cursor: pointer;
-    transition: transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, background 0.3s;
     border: none;
     font-size: 1rem;
 }
 
 .btn:hover {
     transform: translateY(-2px);
-    opacity: 0.95;
 }
 
 .btn-primary {
@@ -168,7 +171,7 @@ h1, h2, h3, .logo {
     background: transparent;
 }
 
-/* Stats */
+/* Stats Bar */
 .stats-bar {
     background: var(--primary-light);
     color: var(--white);
@@ -183,13 +186,13 @@ h1, h2, h3, .logo {
 }
 
 .stat-item h3 {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     color: var(--gold);
 }
 
 /* Sections */
 .section {
-    padding: 4.5rem 0;
+    padding: 5rem 0;
 }
 
 .bg-dark {
@@ -203,7 +206,7 @@ h1, h2, h3, .logo {
 
 .section-title {
     text-align: center;
-    font-size: 2.1rem;
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
     color: var(--primary);
 }
@@ -215,20 +218,14 @@ h1, h2, h3, .logo {
 .section-subtitle {
     text-align: center;
     color: #555;
-    margin-bottom: 2.5rem;
-}
-
-.loading-text {
-    text-align: center;
-    grid-column: 1 / -1;
-    color: #666;
+    margin-bottom: 3rem;
 }
 
 /* Cards */
 .cards-grid, .boi-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 1.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
     margin-top: 2rem;
 }
 
@@ -236,13 +233,8 @@ h1, h2, h3, .logo {
     background: var(--white);
     border-radius: 12px;
     padding: 2rem;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     border-top: 4px solid var(--primary);
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-4px);
 }
 
 .card-tag {
@@ -250,20 +242,15 @@ h1, h2, h3, .logo {
     font-weight: 700;
     color: var(--primary-light);
     background: #d8f3dc;
-    padding: 0.25rem 0.75rem;
+    padding: 0.25rem 0.7rem;
     border-radius: 4px;
     display: inline-block;
     margin-bottom: 0.8rem;
 }
 
 .card h3 {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.8rem;
     color: var(--dark);
-}
-
-.card-summary {
-    margin-bottom: 0.6rem;
-    color: var(--primary);
 }
 
 .card .location {
@@ -281,20 +268,20 @@ h1, h2, h3, .logo {
 }
 
 .boi-card .icon {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 .boi-card h3 {
     color: var(--gold);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.8rem;
 }
 
 /* Eventos */
 .events-list {
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
@@ -310,7 +297,7 @@ h1, h2, h3, .logo {
     background: var(--primary);
     color: var(--gold);
     padding: 1.5rem;
-    min-width: 190px;
+    min-width: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,7 +311,7 @@ h1, h2, h3, .logo {
 
 /* Quiz */
 .quiz-box {
-    max-width: 720px;
+    max-width: 700px;
     margin: 2rem auto 0;
     background: var(--light);
     padding: 2.5rem;
@@ -334,7 +321,7 @@ h1, h2, h3, .logo {
 }
 
 #question-text {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
 }
@@ -356,7 +343,7 @@ h1, h2, h3, .logo {
     transition: all 0.2s;
 }
 
-.option-btn:hover:not(:disabled) {
+.option-btn:hover {
     border-color: var(--primary);
     background: #eef7f2;
 }
@@ -369,57 +356,18 @@ h1, h2, h3, .logo {
 /* Footer */
 .footer {
     background: var(--dark);
-    color: #ccc;
-    padding-top: 3rem;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-.footer-content h3 {
-    color: var(--gold);
-    margin-bottom: 0.4rem;
-}
-
-.footer-links {
-    display: flex;
-    gap: 1.2rem;
-}
-
-.footer-links a {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border: 1px solid rgba(233, 196, 106, 0.4);
-    border-radius: 6px;
-    transition: background 0.3s;
-}
-
-.footer-links a:hover {
-    background: var(--primary);
-}
-
-.footer-bottom {
+    color: #aaa;
     text-align: center;
-    padding: 1.2rem 0;
-    font-size: 0.9rem;
-    color: #888;
+    padding: 2rem 0;
 }
 
+/* Responsivo */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 64px;
+        top: 65px;
         left: 0;
         width: 100%;
         background: var(--dark);
