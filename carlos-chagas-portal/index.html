@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Chagas - MG | A Cidade do Boi</title>
+    <meta name="description" content="Conheça a história, cultura, mistérios e o porquê de Carlos Chagas (MG) ser conhecida como a Cidade do Boi no Vale do Mucuri.">
+    <meta name="keywords" content="Carlos Chagas, Minas Gerais, Cidade do Boi, Vale do Mucuri, Pecuária, História de Carlos Chagas">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">🐂 Carlos Chagas <span>MG</span></a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#sobre">História</a></li>
+                    <li><a href="#cidade-do-boi">Cidade do Boi</a></li>
+                    <li><a href="#atrativos">Cultura & Mistérios</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <span class="badge">Vale do Mucuri • Minas Gerais</span>
+                <h1>Bem-vindo a Carlos Chagas:<br><span>A Capital do Boi</span></h1>
+                <p>Terra de pastagens verdejantes, formações rochosas monumentais, memória ferroviária e a força da pecuária mineira.</p>
+                <div class="hero-buttons">
+                    <a href="#cidade-do-boi" class="btn btn-primary">Por que Cidade do Boi?</a>
+                    <a href="#quiz" class="btn btn-outline">Testar Conhecimentos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-bar">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <h3>1938</h3>
+                    <p>Ano de Emancipação</p>
+                </div>
+                <div class="stat-item">
+                    <h3>3.203 km²</h3>
+                    <p>Extensão Territorial</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Rio Mucuri</h3>
+                    <p>Coração do Vale</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Top Rebanho</h3>
+                    <p>Potência Agropecuária</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2 class="section-title">Nossa História e Identidade</h2>
+                <p class="section-subtitle">Do antigo povoado de Urucu à referência pecuária do nordeste mineiro.</p>
+                <div id="infos-grid" class="cards-grid">
+                    <p class="loading-text">Carregando informações do banco de dados...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cidade-do-boi" class="section bg-dark">
+            <div class="container">
+                <h2 class="section-title text-light">Os 3 Pilares da "Cidade do Boi"</h2>
+                <div class="boi-grid">
+                    <div class="boi-card">
+                        <div class="icon">🌾</div>
+                        <h3>1. Terras Férteis e Extensas</h3>
+                        <p>Com mais de 3.200 km² banhados pelo Rio Mucuri e seus afluentes, o município oferece pastagens produtivas durante o ano inteiro.</p>
+                    </div>
+                    <div class="boi-card">
+                        <div class="icon">🚂</div>
+                        <h3>2. Estrada de Ferro Bahia e Minas</h3>
+                        <p>No século XX, os trilhos da ferrovia transformaram a cidade em um polo estratégico para o escoamento do gado e do comércio regional.</p>
+                    </div>
+                    <div class="boi-card">
+                        <div class="icon">🏆</div>
+                        <h3>3. Genética e Tradição Rural</h3>
+                        <p>Investimentos contínuos em gado de corte e leite consolidaram a fama das exposições agropecuárias e leilões da cidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="atrativos" class="section">
+            <div class="container">
+                <h2 class="section-title">Natureza, Cultura e Mistérios</h2>
+                <p class="section-subtitle">O que faz de Carlos Chagas um lugar único em Minas Gerais.</p>
+                <div id="atrativos-grid" class="cards-grid">
+                    <p class="loading-text">Carregando atrativos...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Calendário de Eventos</h2>
+                <div id="eventos-list" class="events-list">
+                    <p class="loading-text">Carregando eventos...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="section">
+            <div class="container">
+                <h2 class="section-title">Quiz: Você conhece Carlos Chagas?</h2>
+                <div id="quiz-box" class="quiz-box">
+                    <p id="question-text">Carregando perguntas...</p>
+                    <div id="options-container" class="options-grid"></div>
+                    <p id="feedback-text" class="feedback"></p>
+                    <button id="next-btn" class="btn btn-primary" style="display:none;">Próxima Pergunta</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <h3>🐂 Portal Carlos Chagas - MG</h3>
+                <p>Valorizando a história, a cultura e o desenvolvimento do Vale do Mucuri.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://wa.me/5533999999999" target="_blank" rel="noopener">WhatsApp</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Portal Carlos Chagas - MG | A Cidade do Boi.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
